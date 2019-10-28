@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  </head>
+  <body>
+  <h1>Ollies weather app</h1>
+  <p id="errorMessage" ></p>
+  <ul id="authors" ></ul>
+  	 
+  <script src="api.js"></script>
+  <script type="text/javascript">
+  	const errorDiv = document.getElementById('errorMessage');
+    const ul = document.getElementById('authors');
+
+    errorDiv.innerHTML = `hery ${2 + 3}`;
+
+    const users = fetchUsers(10, errorDiv, ul);
+  </script>
+  </body>
+</html>
